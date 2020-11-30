@@ -1,21 +1,6 @@
-# Template for FrontLoops [Elements] challenge
+# Color picker
 
-Install all dependencies
-```bash
-npm i
-```
-
-For start watching all files use:
-```bash
-npm run start
-```
-
-then open in browser
-```bash
-http://localhost:1234/
-```
-
-For build all files use:
-```bash
-npm run build
-```
+Write a script that opens color picker when shift + tab is pressed.
+While you hold shift - it is possible to navigate through colors by pressing tab.
+(The same way alt + tab through apps does)
+When shift + tab are released - change the color of the body to the chosen color.
