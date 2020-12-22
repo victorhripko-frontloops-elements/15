@@ -11,6 +11,8 @@ import './style.scss';
   let isTab = false;
 
   document.addEventListener('keydown', (evt) => {
+    evt.preventDefault();
+
     if ( evt.code === 'ShiftLeft' ) isShift = true;
     if ( evt.code === 'Tab' && isShift ) {
       isTab = true;
@@ -20,6 +22,8 @@ import './style.scss';
   });
 
   document.addEventListener('keyup', (evt) => {
+
+
     const keyUp = evt.code === 'ShiftLeft';
 
     if ( !keyUp ) return;
